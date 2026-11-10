@@ -28,3 +28,5 @@ jobs:
       - run: bun repo ci
       - name: The tarball holds the index
         run: bun pm pack --dry-run --ignore-scripts | grep -q 'references/INDEX.md'
+      - name: Installing the package runs no script
+        run: '! grep -qE ''"(preinstall|install|postinstall)"'' package.json'
