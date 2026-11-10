@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-11-10
+
+### Fixed
+
+- Installing the package runs no script: `repo sync` moved from `postinstall`, which npm runs in every consumer's install, to `prepare`, which runs only in this repo.
+
 ## [0.1.0] - 2026-11-10
 
 ### Added

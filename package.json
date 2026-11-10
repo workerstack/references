@@ -1,6 +1,6 @@
 {
   "name": "@workerstack/references",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An index of every published @workerstack package, for agents and for repo sync",
   "license": "MIT",
   "author": "Lovro Žagar",
@@ -29,7 +29,7 @@
   },
   "packageManager": "bun@1.4.4",
   "scripts": {
-    "postinstall": "repo sync --postinstall"
+    "prepare": "repo sync --postinstall"
   },
   "devDependencies": {
     "@workerstack/repo": "0.1.0"
