@@ -1,0 +1,10 @@
+{
+  "files.readonlyInclude": {
+    ".githooks/commit-msg": true,
+    ".githooks/pre-commit": true,
+    ".oxfmtrc.jsonc": true,
+    ".oxlintrc.json": true,
+    "bunfig.toml": true,
+    "knip.json": true
+  }
+}
