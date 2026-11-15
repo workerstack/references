@@ -1,8 +1,9 @@
-# repo:ignore d65df7ab
+# repo:ignore cd5e2f74
 .tmp/
 .worktrees/
 coverage/
 .vitest/
+repo.config.local.ts
 **/.repo/plans/
 **/.repo/plans-fast/
 **/.repo/roadmaps/
