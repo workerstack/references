@@ -1,10 +1,55 @@
 {
+  "js/ts.experimental.useTsgo": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.oxc": "explicit"
+  },
+  "editor.defaultFormatter": "wdomitrz.simple-lsp-client",
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.watcherExclude": {
+    "**/.turbo/**": true,
+    "**/.worktrees/**": true
+  },
+  "js/ts.tsdk.path": "./node_modules/typescript",
+  "oxc.enable.oxfmt": false,
+  "search.exclude": {
+    "**/.turbo": true,
+    "**/.worktrees": true,
+    "**/coverage": true
+  },
+  "simpleLspClient.formatters": {
+    "bun": {
+      "cmd": [
+        "bun",
+        "fmt",
+        "--no-script",
+        "--stdin-filepath",
+        "${file}"
+      ],
+      "filetypes": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "json",
+        "jsonc",
+        "css",
+        "tailwindcss",
+        "scss"
+      ]
+    }
+  },
   "files.readonlyInclude": {
     ".githooks/commit-msg": true,
     ".githooks/pre-commit": true,
+    ".githooks/pre-push": true,
     ".oxfmtrc.jsonc": true,
-    ".oxlintrc.json": true,
+    ".oxlintrc.jsonc": true,
+    ".repo/.gitkeep": true,
     "bunfig.toml": true,
-    "knip.json": true
+    "knip.jsonc": true
   }
 }

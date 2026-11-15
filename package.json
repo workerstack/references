@@ -1,37 +1,38 @@
 {
   "name": "@workerstack/references",
   "version": "0.1.1",
+  "private": false,
   "description": "An index of every published @workerstack package, for agents and for repo sync",
+  "keywords": [
+    "agents",
+    "references",
+    "workerstack"
+  ],
+  "homepage": "https://github.com/workerstack/references#readme",
+  "bugs": {
+    "url": "https://github.com/workerstack/references/issues"
+  },
   "license": "MIT",
   "author": "Lovro Žagar",
-  "homepage": "https://github.com/workerstack/references#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/workerstack/references.git"
   },
-  "bugs": {
-    "url": "https://github.com/workerstack/references/issues"
-  },
-  "keywords": [
-    "workerstack",
-    "references",
-    "agents"
-  ],
-  "private": false,
-  "sideEffects": false,
-  "type": "module",
   "files": [
     "references"
   ],
+  "type": "module",
+  "sideEffects": false,
   "exports": {
     "./references/*": "./references/*",
     "./package.json": "./package.json"
   },
-  "packageManager": "bun@1.4.4",
   "scripts": {
     "prepare": "repo sync --postinstall"
   },
   "devDependencies": {
-    "@workerstack/repo": "0.1.0"
-  }
+    "@workerstack/repo": "0.1.0",
+    "typescript": "7.0.2"
+  },
+  "packageManager": "bun@1.4.4"
 }
