@@ -1,8 +1,9 @@
-# repo:generated b2beb32d
+# repo:generated 444b28ef
 * text=auto eol=lf
 .githooks/commit-msg linguist-generated
 .githooks/pre-commit linguist-generated
 .githooks/pre-push linguist-generated
+.githooks/reference-transaction linguist-generated
 .repo/.gitkeep linguist-generated
 bunfig.toml linguist-generated
 # /repo:generated
